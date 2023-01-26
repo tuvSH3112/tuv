@@ -1,25 +1,3 @@
-<form>
-  <label for="trade-date">Trade Date:</label>
-  <input type="date" id="trade-date" name="trade-date">
-  
-  <label for="enter-price">Enter Price:</label>
-  <input type="number" id="enter-price" name="enter-price">
-  
-  <label for="risk-reward">Risk/Reward Ratio:</label>
-  <input type="number" id="risk-reward" name="risk-reward">
-  
-  <label for="risk-amount">Risk Amount:</label>
-  <input type="number" id="risk-amount" name="risk-amount">
-  
-  <label for="profit">Profit/Loss:</label>
-  <input type="number" id="profit" name="profit">
-  
-  <label for="profit-amount">Profit Amount:</label>
-  <input type="number" id="profit-amount" name="profit-amount">
-  
-  <input type="submit" value="Save">
-</form>
-
 <style>
 form {
   width: 500px;
@@ -60,3 +38,33 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 </style>
+<form onsubmit="saveTrade()">
+  <label for="trade-date">Trade Date:</label>
+  <input type="date" id="trade-date" name="trade-date">
+  
+  <label for="enter-price">Enter Price:</label>
+  <input type="number" id="enter-price" name="enter-price">
+  
+  <label for="risk-reward">Risk/Reward Ratio:</label>
+  <input type="number" id="risk-reward" name="risk-reward">
+  
+  <label for="risk-amount">Risk Amount:</label>
+  <input type="number" id="risk-amount" name="risk-amount">
+  
+  <label for="profit">Profit/Loss:</label>
+  <input type="number" id="profit" name="profit">
+  
+  <label for="profit-amount">Profit Amount:</label>
+  <input type="number" id="profit-amount" name="profit-amount">
+  
+  <input type="submit" value="Save">
+</form>
+
+<script>
+  function saveTrade() {
+    event.preventDefault();
+    var tradeDate = document.getElementById("trade-date").value;
+    var enterPrice = document.getElementById("enter-price").value;
+    var riskReward =
+  }
+</script>
