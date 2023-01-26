@@ -1,0 +1,62 @@
+<form>
+  <label for="trade-date">Trade Date:</label>
+  <input type="date" id="trade-date" name="trade-date">
+  
+  <label for="enter-price">Enter Price:</label>
+  <input type="number" id="enter-price" name="enter-price">
+  
+  <label for="risk-reward">Risk/Reward Ratio:</label>
+  <input type="number" id="risk-reward" name="risk-reward">
+  
+  <label for="risk-amount">Risk Amount:</label>
+  <input type="number" id="risk-amount" name="risk-amount">
+  
+  <label for="profit">Profit/Loss:</label>
+  <input type="number" id="profit" name="profit">
+  
+  <label for="profit-amount">Profit Amount:</label>
+  <input type="number" id="profit-amount" name="profit-amount">
+  
+  <input type="submit" value="Save">
+</form>
+
+<style>
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+</style>
