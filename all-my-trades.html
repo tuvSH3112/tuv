@@ -1,0 +1,77 @@
+<div id="trade-list"></div>
+<script>
+    var tradeList = document.getElementById("trade-list");
+    var trades = JSON.parse(localStorage.getItem("trades"));
+  
+    if (trades) {
+      for (var i = 0; i < trades.length; i++) {
+        var trade = trades[i];
+        var tradeRow = document.createElement("div");
+        tradeRow.innerHTML = 
+          "<p>Trade Date: " + trade.tradeDate + "</p>" +
+          "<p>Enter Price: " + trade.enterPrice + "</p>" +
+          "<p>Risk/Reward Ratio: " + trade.riskReward + "</p>" +
+          "<p>Risk Amount: " + trade.riskAmount + "</p>" +
+          "<p>Profit/Loss: " + trade.profit + "</p>" +
+          "<p>Profit Amount: " + trade.profitAmount + "</p>";
+        tradeList.appendChild(tradeRow);
+      }
+    } else {
+      tradeList.innerHTML = "No trades to display.";
+    }
+    localStorage.setItem("tradeDate", tradeDate);
+    localStorage.setItem("enterPrice", enterPrice);
+    localStorage.setItem("riskReward", riskReward);
+    localStorage.setItem("riskAmount", riskAmount);
+    localStorage.setItem("profit", profit);
+    localStorage.setItem("profitAmount", profitAmount);
+    var tradeDate = local
+  </script>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>All My Trades</title>
+    <style>
+      /* Add CSS styling for the table and its elements */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      /* Add a class for the table rows */
+      .trade-row {
+        background-color: #f9f9f9;
+      }
+      /* Add a class for the table cells */
+      .trade-data {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All My Trades</h1>
+    <table>
+      <tr>
+        <th>Trade Date</th>
+        <th>Enter Price</th>
+        <th>Risk/Reward Ratio</th>
+        <th>Risk Amount</th>
+        <th>Profit/Loss</th>
+        <th>Profit Amount</th>
+      </tr>
+      <!-- Add table rows for each saved trade -->
+      <button onclick="location.href='https://tuvsh3112.github.io/tuv/tuv.html'">All Trades</button>
+      <tr class="main page">
+      </tr>
+    </table>
+  </body>
+  </html>
+  
